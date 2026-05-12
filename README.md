@@ -1,1 +1,1 @@
-# LWKeyAdd v1.1
+# LWKeyAdd v1.2
