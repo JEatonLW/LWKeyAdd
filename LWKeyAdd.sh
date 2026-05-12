@@ -1,5 +1,5 @@
 #!/bin/bash
-## LWKeygen v1.1
+## LWKeygen v1.2
 ## Written by JEaton and Gemini
 ## Updated 20260326
 
@@ -57,11 +57,11 @@ echo "BILLING NOTE (Copy to Workstation Terminal):"
 echo "========================================================"
 echo
 cat <<EOF
-cat <<EOM > "~/.ssh/$key"
+cat <<EOM > ~/.ssh/$key
 $(cat "$key_path")
 EOM
 
-chmod 600 "~/.ssh/$key"
+chmod 600 ~/.ssh/$key
 ssh $user@$ip -p $port -i ~/.ssh/$key
 
 Passphrase: $pph
